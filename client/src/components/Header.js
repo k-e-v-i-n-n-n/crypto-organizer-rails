@@ -1,6 +1,7 @@
 import SearchResult from "./SearchResult"
 import avatar from "../images/avatar.png"
 
+
 const Header = () => {
 
     return(
@@ -18,6 +19,7 @@ const Header = () => {
             </div>
            
                 <input className="search-input" placeholder="Search Currency"/>
+               
         
             <div className="header-result">
                 <SearchResult/>
