@@ -5,11 +5,13 @@ const Header = () => {
     return(
 
         <div className="header-container">
-            <div className="header-search">
-                <h3>CRYPTOCURRENCY</h3>
+            <div className="header-title">
+                <h1>CRYPTOCURRENCY</h1>
                 <h7>A Daily Crypto Organizer</h7>
-                <input placeholder="Search Currency"/>
             </div>
+           
+                <input className="search-input" placeholder="Search Currency"/>
+        
             <div className="header-result">
                 <SearchResult/>
             </div>

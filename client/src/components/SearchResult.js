@@ -4,11 +4,13 @@ const SearchResult = () => {
     return(
 
         <div className="search-result-container">
-            <h4>Currency</h4>
             <div className="result-tags-container">
-                <p>Price</p>
-                <p>Rank</p>
-                <p>Day Change</p>
+                <h4>Currency</h4>
+                <div className="results-p">
+                    <p>Price</p>
+                    <p>Rank</p>
+                    <p>Day Change</p>
+                </div>
             </div>
             <div className="save-buttons-container">
                 <button className="save-buttons" >Buy</button>
