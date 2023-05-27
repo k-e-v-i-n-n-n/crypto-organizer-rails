@@ -229,7 +229,69 @@ align-items: center;
 }
 
 
+/* ------------------------------------LOGIN MODAL */
 
+.overlay{
+  position: absolute;
+  top:0;
+  left:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .8);
+}
 
+.modal{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 500px;
+  background-color: white;
+  padding: 40px;
+  border-radius: 7px;
+  box-shadow: rgba(0,0,0,0.05) 0 6px 24px 0, rgba(0,0,0,0.08) 0 0 0 1px;
+}
 
+.auth-container{
+
+  display: flex;
+  justify-content: center;
+  margin:5px;
+}
+
+.auth-container-box{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  overflow: hidden;
+  box-shadow: rgba(0,0,0,0.05) 0 6px 24px, rgba(0,0,0,0.08) 0 0 0 1px;
+
+  width: 475px;
+  border-radius: 1px;
+}
+
+.auth-container-box form{
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 375px;
+  padding:10px;
+}
+
+.auth-options{
+
+  display: flex;
+}
+
+.auth-options button {
+
+  width: 50%;
+  padding: 10px;
+  border: none;
+  color: rgb(35,38,47);
+}
 

@@ -2,7 +2,7 @@ import SearchResult from "./SearchResult"
 import avatar from "../images/avatar.png"
 
 
-const Header = () => {
+const Header = ({showModal, setShowModal}) => {
 
     return(
 
