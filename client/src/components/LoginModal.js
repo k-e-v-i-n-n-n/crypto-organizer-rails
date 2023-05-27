@@ -4,13 +4,13 @@ import { AppContext } from "../Context"
 const LoginModal = () => {
     const [error, setError] = useState(null)
     const [isLogIn, setIsLogIn] = useState(false)
-    const [email, setEmail] = useState(null)
+    const [username, setUsername] = useState(null)
     const [password, setPassword] = useState(null)
     const [passwordConfirm, setPasswordConfirm] = useState(null)
   
     const {setUser} = useContext(AppContext)
   
-    console.log(email, password, passwordConfirm)
+    console.log(username, password, passwordConfirm)
   
     const goLogin = (isIt) => {
       setError(null)
@@ -30,7 +30,7 @@ const LoginModal = () => {
         method: "POST",
         headers: {"Content-Type": 'application/json'},
         body: JSON.stringify({
-          username: email,
+          username: username,
           password: password,
           password_confirmation: passwordConfirm
         })
@@ -49,7 +49,7 @@ const LoginModal = () => {
                         <div className="auth-container-box">
                         <form>
                             <h2>{isLogIn? "Please log in" : "Please sign up"}</h2>
-                            <input type="email" placeholder="email" onChange={(e)=> setEmail(e.target.value)} />
+                            <input type="username" placeholder="username" onChange={(e)=> setUsername(e.target.value)} />
                             <input type="password" placeholder="password" onChange={(e)=> setPassword(e.target.value)} />
                             {!isLogIn && <input type="password" placeholder="password confirmation" onChange={(e)=> setPasswordConfirm(e.target.value)} />}
                             <input type="submit" className="create" onClick={(e) => {handleSubmit(e, isLogIn? "login" : "signup")}}/>
