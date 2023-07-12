@@ -44,7 +44,7 @@ const LoginModal = () => {
   
       return (
         <div className="overlay">
-            <div className="modal">
+         
                 <div className="auth-container" >
                         <div className="auth-container-box">
                         <form>
@@ -65,7 +65,7 @@ const LoginModal = () => {
                         </div>
                         </div>
                 </div>
-            </div>
+            
         </div>
       )
     }

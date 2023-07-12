@@ -265,12 +265,12 @@ align-items: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
-
+  background-color: white;
   overflow: hidden;
   box-shadow: rgba(0,0,0,0.05) 0 6px 24px, rgba(0,0,0,0.08) 0 0 0 1px;
 
   width: 475px;
-  border-radius: 1px;
+  border-radius: 7px;
 }
 
 .auth-container-box form{
